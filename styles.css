@@ -25,3 +25,24 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.blinkyDancer{
+  background-color: rgb(71, 20, 67);
+  height:40px;
+  width:40px;
+  position:absolute;
+}
+
+.ballRoomDancer{
+  background-color: rgb(20, 34, 71);
+  height:40px;
+  width:40px;
+  position:absolute;
+}
+
+.breakDancer{
+  background-color: rgb(40, 71, 20);
+  height:40px;
+  width:40px;
+  position:absolute;
+}
