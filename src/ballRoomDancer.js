@@ -20,5 +20,4 @@ MakeBallRoomDancer.prototype.step = function() {
   };
 
   this.$node.css(styleSettings);
-  this.$node.toggle();
 };
