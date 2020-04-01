@@ -1,52 +1,81 @@
-body, html{
-  height:100%;
+body,
+html {
+  height: 100%;
 }
-body{
+
+body {
   margin: 0px;
   /* background-color:#444; */
   font-size: 18px;
 }
-body, a:link, a:visited, a:active{
+
+body,
+a:link,
+a:visited,
+a:active {
   color: lightblue;
 }
-.title, .addDancerButton{
-  padding:5px 12px;
-  float:right;
+
+.title,
+.addDancerButton {
+  padding: 5px 15px;
+  width:15vw;
 }
-.topbar{
-  height:32px;
-  background-color: #555;
+
+.topbar {
+  display: flex;
+  width: 100vw;
+  height: 50px;
+  background-color: rgb(0, 0, 0);
+  color: black;
 }
-.title{
+
+.topbar a{
+  margin-left: 3vw;
+  text-decoration: none;
+  background-color: rgb(248, 220, 128);
+  color: black;
+  font-weight: bold;
+  width:15vw;
+}
+
+button{
+  margin-left: 50vw;
+  width:15vw;
+}
+
+.title {
   background-color: #777;
 }
-.dancer{
-  border:10px solid red;
-  border-radius:10px;
-  position:absolute;
+
+.dancer {
+  border: 10px solid red;
+  border-radius: 10px;
+  position: absolute;
 }
 
-.blinkyDancer{
-  height:40px;
-  width:40px;
-  position:absolute;
+.blinkyDancer {
+  height: 40px;
+  width: 40px;
+  position: absolute;
 }
 
-.ballRoomDancer{
-  height:40px;
-  width:40px;
-  position:absolute;
+.spinDancer {
+  height: 40px;
+  width: 40px;
+  position: absolute;
   -webkit-animation-name: spin;
-  -webkit-animation-duration: .1s;
+  -webkit-animation-duration: .5s;
   animation-name: spin;
-  animation-duration: .1s;
+  animation-duration: .5s;
   animation-iteration-count: infinite;
+  transform-origin: center;
 }
 
-.breakDancer{
-  height:40px;
-  width:40px;
-  position:absolute;
+.shaqDancer {
+  height: 40px;
+  width: 40px;
+  position: absolute;
   -webkit-animation-name: slide;
   -webkit-animation-duration: 8s;
   animation-name: slide;
@@ -57,15 +86,19 @@ body, a:link, a:visited, a:active{
 @-webkit-keyframes slide {
 
   25% {
-      left: 10vw;
+    left: 30vw;
   }
 
   50% {
-      left: -10vw;
+    left: 20vw;
+  }
+
+  65% {
+    left: 70vw;
   }
 
   75% {
-      top: 10vh;
+    top: 10vh;
   }
 
 }
@@ -73,23 +106,28 @@ body, a:link, a:visited, a:active{
 @keyframes slide {
 
   25% {
-    left: 10vw;
- }
+    left: 30vw;
+  }
 
- 50% {
-    left: -10vw;
- }
+  50% {
+    left: 20vw;
+  }
 
- 75% {
-   top: 10vh;
- }
+  65% {
+    left: 70vw;
+  }
+
+  75% {
+    top: 10vh;
+  }
 
 }
 
 @-webkit-keyframes spin {
 
   25% {
-      transform: rotate(90deg);
+
+    transform: rotate(90deg);
   }
 
   50% {
@@ -111,18 +149,18 @@ body, a:link, a:visited, a:active{
 
   25% {
     transform: rotate(90deg);
-}
+  }
 
-50% {
-  transform: rotate(180deg)
-}
+  50% {
+    transform: rotate(180deg)
+  }
 
-75% {
-  transform: rotate(270deg)
-}
+  75% {
+    transform: rotate(270deg)
+  }
 
-100% {
-  transform: rotate(360deg)
-}
+  100% {
+    transform: rotate(360deg)
+  }
 
 }

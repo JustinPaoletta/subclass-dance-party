@@ -1,12 +1,12 @@
-var MakeBallRoomDancer = function(top, left, timeBetweenSteps) {
+var MakeSpinDancer = function (top, left, timeBetweenSteps) {
   MakeBlinkyDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class=\'ballRoomDancer\'><img style= \'height: 220px; width: 180px;\' src=\'cat2.png\'></img></span>');
+  this.$node = $('<span class=\'spinDancer\'><img style= \'height: 220px; width: 180px;\' src=\'cat2.png\'></img></span>');
 };
 
-MakeBallRoomDancer.prototype = Object.create(MakeBlinkyDancer.prototype);
-MakeBallRoomDancer.prototype.constructor = MakeBallRoomDancer;
+MakeSpinDancer.prototype = Object.create(MakeBlinkyDancer.prototype);
+MakeSpinDancer.prototype.constructor = MakeSpinDancer;
 
-MakeBallRoomDancer.prototype.step = function() {
+MakeSpinDancer.prototype.step = function () {
   // call the old version of step at the beginning of any call to this new version of step
   MakeDancer.prototype.step.call(this);
 
@@ -18,6 +18,8 @@ MakeBallRoomDancer.prototype.step = function() {
     top: this.top,
     left: this.left,
   };
-
+  $(this.$node).mouseover(function() {
+    $('.spinDancer').fadeTo('slow', 0.33);
+  });
   this.$node.css(styleSettings);
 };
