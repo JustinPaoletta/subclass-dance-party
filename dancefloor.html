@@ -12,7 +12,7 @@
   <body>
     <img style="position: fixed" src= "space.png">
     <div class="topbar" style="position: fixed">
-      <span class="title">object dance party</span>
+      <span class="title">Shaq and Kittens Dance Party</span>
       <button onclick="lineUp()">Line Up!</button>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="MakeBlinkyDancer">add a blinky dancer</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="MakeBallRoomDancer">add a ballRoomDancer</a>
@@ -27,7 +27,6 @@
       function lineUp() {
         for (let i = 0; i < window.dancers.length; i++) {
           window.dancers[i].top = 30;
-          console.log(window.dancers[i].$node);
         }
       }
     </script>
