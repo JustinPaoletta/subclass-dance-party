@@ -20,6 +20,8 @@ MakeBlinkyDancer.prototype.step = function() {
     left: this.left,
   };
 
+
+
   this.$node.css(styleSettings);
   this.$node.toggle();
 };

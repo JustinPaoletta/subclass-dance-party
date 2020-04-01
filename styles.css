@@ -39,8 +39,13 @@ body, a:link, a:visited, a:active{
 }
 
 .breakDancer{
-
   height:40px;
   width:40px;
   position:absolute;
 }
+
+.breakDancer :hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
